@@ -1,0 +1,79 @@
+.outcomes {
+  border: solid 3px #007399;
+  padding: 15px 15px 5px 15px;
+}
+
+
+.outcomes h5 {
+  color: #004b66;
+  font-size: 120% !important;
+  margin-top: 0px !important;
+}
+
+.lab, .feature, .customExample {
+  border: solid 3px #00394d;
+  padding: 15px 15px 5px 15px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-origin: content-box;
+}
+
+.lab h5, .feature h5, .customExample h5 {
+  color: #004b66;
+  font-size: 120% !important;
+  margin-top: 20px !important;
+  margin-left: 110px;
+}
+
+.lab {
+    background-image: url("images/png/beaker.png");
+}
+
+.feature {
+    background-image: url("images/png/glass.png");
+}
+
+.customExample {
+    background-image: url("images/png/check.png");
+}
+
+#lab::before, #customExample::before, #feature::before {
+  background-size: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+#lab::before {
+  background-image: url("images/png/beaker.png");
+}
+
+#customExample::before {
+  background-image: url("images/png/check.png");
+}
+
+#feature::before {
+  background-image: url("images/png/glass.png");
+}
+
+.lab p:nth-child(2), .feature p:nth-child(2), .customExample p:nth-child(2) {
+  margin-top: 30px !important;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
